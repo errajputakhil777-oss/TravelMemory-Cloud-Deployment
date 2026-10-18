@@ -66,7 +66,7 @@ flowchart LR
 4. Expand the `travelmemory` database and select the `tripdetails` collection.
 5. Confirm that documents are present. The screenshot below shows the `tripdetails` collection and saved trip records.
 
-![MongoDB Atlas Data Explorer showing tripdetails records](docs/screenshots/mongodb-atlas-tripdetails.png)
+![MongoDB Atlas Data Explorer showing tripdetails records](mongodb-atlas-tripdetails.png)
 
 6. Open **Security → Network Access** and add the backend EC2 outbound public IP address to the IP access list. For a separate Compass connection from your computer, use **Add Current IP Address** for your computer as well.
 7. Open **Security → Database Access** and create/verify a database user with the permissions required by the application.
@@ -75,7 +75,7 @@ flowchart LR
 
 Atlas connection dialog evidence:
 
-![MongoDB Atlas connect dialog](docs/screenshots/mongodb-atlas-connect.png)
+![MongoDB Atlas connect dialog](mongodb-atlas-connect.png)
 
 ### 2. Connect to EC2 and clone the project
 
@@ -93,7 +93,7 @@ ls
 
 The project contains `backend/` and `frontend/` directories.
 
-![EC2 project setup evidence](docs/screenshots/image6.png)
+![EC2 project setup evidence](image6.png)
 
 ### 3. Configure the Node.js backend
 
@@ -279,9 +279,9 @@ Expected response: `Hello World!`
 7. Register both backend EC2 instances on port `3000`.
 8. Create the target group, open its **Targets** tab, and wait until both targets show **Healthy**.
 
-![Target group configuration evidence](docs/screenshots/image22.png)
+![Target group configuration evidence](image22.png)
 
-![Target group registered targets evidence](docs/screenshots/image48.png)
+![Target group registered targets evidence](image48.png)
 
 ### 7. Create the Application Load Balancer
 
@@ -309,9 +309,9 @@ Hello World!
 
 Screenshots of the load balancer setup and status:
 
-![Create Application Load Balancer](docs/screenshots/image30.png)
+![Create Application Load Balancer](image30.png)
 
-![Load balancer details](docs/screenshots/image49.png)
+![Load balancer details](image49.png)
 
 ### 8. Test the application and database
 
@@ -355,7 +355,7 @@ git status --short
 git check-ignore -v backend/.env
 ```
 
-To update this README, save it as `README.md` at the root of your GitHub repository. Put the screenshots in `docs/screenshots/` as included in this package, then commit and push both the README and screenshots.
+To update this README, save it as `README.md` at the root of your GitHub repository. Put the screenshots in `` as included in this package, then commit and push both the README and screenshots.
 
 ## Useful commands
 
@@ -380,4 +380,4 @@ To update this README, save it as `README.md` at the root of your GitHub reposit
 
 ## Screenshots
 
-The `docs/screenshots/` directory in this package contains the deployment evidence screenshots available from the working session, including MongoDB Atlas and AWS console/terminal evidence. GitHub displays README images only when the referenced files have also been committed to the repository. [GitHub documentation: README files and relative image paths](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes).
+The `` directory in this package contains the deployment evidence screenshots available from the working session, including MongoDB Atlas and AWS console/terminal evidence. GitHub displays README images only when the referenced files have also been committed to the repository. [GitHub documentation: README files and relative image paths](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes).
